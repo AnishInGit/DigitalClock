@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* background-image: url('https://images.pexels.com/photos/921724/pexels-photo-921724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.hanger {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 35vw;
+  animation: hang 3s ease;
+}
+
+.hanger1 {
+  height: 35vh;
+  background-color: #8e581a;
+  margin-left: 29.8vw;
+  /*   margin-right: 50vw;  */
+  animation: ani 3s ease;
+  position: relative;
+}
+
+.hanger2 {
+  height: 35vh;
+  background-color: #8e581a;
+  /*   margin-left: 50vw; */
+  margin-right: 29.8vw;
+  animation: ani 3s ease;
+  position: relative;
+}
+
+#time {
+  height: 25vh;
+  width: 50vw;
+  position: fixed;
+  text-align: center;
+  padding-top: 5vh;
+  /*   background-color: black; */
+  background-image: url('https://c1.wallpaperflare.com/preview/881/727/771/wood-woods-floor-hardwood.jpg');
+  background-attachment: fixed;
+  color: #14e617;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  /*   margin-top: 350px; */
+
+  border-radius: 20px;
+  /*   font-family: 'Trade Winds', cursive; */
+  font-family: 'Nosifer', cursive;
+}
+
+
+@keyframes ani {
+  0% {
+    height: 0%;
+  }
+
+  25% {
+    height: 2%;
+  }
+
+  /*
+  50%{
+        height: 5%;
+  }
+  75%{
+        height: 400%;
+  } */
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes ani {
+  0% {
+    height: 0%;
+  }
+
+  25% {
+    height: 2%;
+  }
+
+  /*
+  50%{
+        height: 5%;
+  }
+  75%{
+        height: 40%;
+  } */
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes hang {
+  0% {
+    height: 30vh;
+  }
+
+  /* 25%{
+    height: vh;
+  }
+  50%{
+        height: 17vh;
+  }
+  75%{
+        height: 29vh;
+  } */
+  100% {
+    height: 35vh;
+  }
+}
+
+.speak {
+  position: relative;
+  background-color: rgb(231, 100, 35);
+  color: white;
+  border-color: white;
+  height: 7vh;
+  width: 3vw;
+  margin: 22.4vh 3vw 4vh 71vw;
+  z-index: 150;
+  border-radius: 50%;
+  font-family: 'Trade Winds', cursive;
+}
+.speak:hover{
+  opacity: .7;
+  color: rgb(251, 226, 4);
+  font-weight: bolder;
+  border-color: rgb(236, 233, 92);
+  width: 3.3vw;
+  height: 7.3vh;
+}
+
+
+@media only screen and (max-width: 1100px) {
+
+  #time {
+    height: auto;
+    width: auto;
+    position: -webkit-sticky;
+    margin-left: 22vw;
+  }
+  .speak{
+    width: auto;
+    height: auto;
+    position: -webkit-sticky;
+    
+  }
+}
